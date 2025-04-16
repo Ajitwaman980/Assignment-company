@@ -1,0 +1,33 @@
+Assignment Title:
+`Task Tracker with Calendar Integration and Notifications `
+
+#backend
+
+run command
+
+```
+1) npm i
+2) setup database
+3) nodemon index.js
+```
+
+Tech Stack
+Backend: Node.js, Express.js
+Database: MongoDB (Mongoose)
+datavalidation zod
+
+API Endpoints
+
+Method Route Description
+GET /api/all Get all tasks
+GET /api/task/:id Get task by ID
+POST /api/new Create new task
+PUT /api/update/:id Update task
+DELETE /api/delete/:id Delete task
+GET /api/complete/:id Mark task completed
+GET /api/overdue Get due/overdue tasks
+PUT /api/updateDueDate/:id Update due date
+
+feature
+prenent dos using rate limiting
+data validation used zod libary
