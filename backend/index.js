@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 // cors for frontend interaction
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://assignment-company-fk3k.vercel.app",
     credentials: true,
   })
 );
