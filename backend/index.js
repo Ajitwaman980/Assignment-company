@@ -7,7 +7,8 @@ const app = express();
 const connnection = require("./config/connection");
 const taskRouter = require("./routes/taskRouter");
 const port = 3000;
-
+const dotenv = require("dotenv");
+dotenv.config();
 //
 // middleware
 app.use(bodyParser.json());
