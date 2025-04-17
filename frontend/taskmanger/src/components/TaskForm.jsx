@@ -14,9 +14,13 @@ function TaskForm() {
   const submit = async (data) => {
     try {
       console.log("this is form data", data);
-      const res = await axios.post("http://localhost:3000/task/new", data, {
-        withCredentials: true,
-      });
+      const res = await axios.post(
+        "https://assignment-company.onrender.com/task/new",
+        data,
+        {
+          withCredentials: true,
+        }
+      );
       //  status code 201 ok
       if (res.status === 201) {
         console.log("Task created successfully:", res.data);

@@ -10,7 +10,9 @@ function TaskList() {
   const navigate = useNavigate();
   const alltask = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/task/all");
+      const response = await axios.get(
+        "https://assignment-company.onrender.com/task/all"
+      );
       if (response.status === 200) {
         setTasks(response.data);
       }
@@ -21,7 +23,7 @@ function TaskList() {
   const deleteTask = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/task/delete/${id}`
+        `https://assignment-company.onrender.com/task/delete/${id}`
       );
       if (response.status === 200) {
         alert("Task deleted successfully!");
@@ -37,7 +39,7 @@ function TaskList() {
   const completedTask = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/task/complete/${id}`
+        `https://assignment-company.onrender.com/task/complete/${id}`
       );
       if (response.status === 200) {
         alert("Task completed successfully!");

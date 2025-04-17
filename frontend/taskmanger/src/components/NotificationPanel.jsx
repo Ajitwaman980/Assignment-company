@@ -10,9 +10,12 @@ const NotificationPanel = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/task/overdue", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://assignment-company.onrender.com/task/overdue",
+          {
+            withCredentials: true,
+          }
+        );
         const { dueToday, overdue } = res.data;
         setDueToday(dueToday);
         setOverdue(overdue);

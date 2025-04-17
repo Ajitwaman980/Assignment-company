@@ -12,7 +12,7 @@ const TaskEdit = () => {
   const editTask = async (data) => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/task/update/${id}`,
+        `https://assignment-company.onrender.com/task/update/${id}`,
         data,
         { withCredentials: true }
       );
@@ -33,7 +33,7 @@ const TaskEdit = () => {
     const getbyid = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/task/task/${id}`,
+          `https://assignment-company.onrender.com/task/task/${id}`,
           {
             withCredentials: true,
           }
